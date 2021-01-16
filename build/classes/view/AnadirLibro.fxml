@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styles/mainStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AnadirLibroController">
+    
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="118.0" layoutY="14.0" prefHeight="200.0" prefWidth="100.0" spacing="10" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+            <children>
+                <fx:include fx:id="encabezado" source="Encabezado.fxml" />
+            <Label text="Introduce los datos del libro a introducir en la librería" />  
+                
+               
+                <fx:include fx:id="componenteModificar" source="ComponenteModificar.fxml" />
+            </children>
+        
+        </VBox>
+        
+        <Button id="buttonBuscar" fx:id="agregarLibro" mnemonicParsing="false" onAction="#agregarLibro" text="Agregar Libro" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+
+    </children>
+    
+</AnchorPane>

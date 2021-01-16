@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane layoutY="25.0" prefHeight="200.0" prefWidth="548.0" stylesheets="@../styles/mainStyle.css" AnchorPane.bottomAnchor="-25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+         
+    <top> 
+    
+                <Label id="tituloPanelPrincipal" prefHeight="85.0" prefWidth="585.0" text="Bienvenido a tu librearía personal">
+               <BorderPane.margin>
+                  <Insets left="-15.0" right="-15.0" />
+               </BorderPane.margin>
+                </Label>
+       
+    </top>
+
+    <center>
+        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="********************************************************" />
+                <Label text="*       PSP - Tarea Individual 5 - Biblioteca casera      *" />
+                <Label text="********************************************************" />
+                <Label text="*                      Ramón Martínez Nieto                       *" />
+                <Label text="********************************************************" />
+                <Label text="*                                                                                  *" />
+                <Label text="********************************************************" />
+            </children>
+            <BorderPane.margin>
+                <Insets left="20.0" right="-20.0" />
+            </BorderPane.margin>
+        </VBox>
+    </center>
+       
+</BorderPane>

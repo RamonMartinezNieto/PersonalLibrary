@@ -1,0 +1,57 @@
+
+#txtID{
+    -fx-background-color: #EEEEEE;  
+    -fx-border-color: #999999;
+    -fx-border-radius: 3px;
+}
+
+#tituloPanelPrincipal {
+    -fx-font-size: 26px;
+    -fx-background-color: #99CCFF;
+    -fx-alignment: center; 
+    -fx-pref-height: 85;
+    -fx-pref-width: 900;
+    -fx-border-color: black; 
+    -fx-border-width: 0 0 2 0;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;    
+
+}
+
+.label {
+    -fx-font-size: 16px; 
+    -fx-alignment: center; 
+    -fx-pref-width: 900;
+}   
+
+#labelDatosLibro {
+    -fx-alignment: TOP_LEFT;
+    -fx-label-padding: 0 10 0 10;
+}
+
+#labelEncabezado {
+    -fx-alignment: TOP_LEFT;
+    -fx-label-padding: 0 0 0 5;
+}
+
+
+#tituloLibroEspecifico{
+    -fx-font-size: 18px; 
+    -fx-background-color: #99CCFF;
+    -fx-font-weight: bold;
+    -fx-border-color: black; 
+    -fx-border-width: 0 0 1 0;
+}
+
+#gridPaneDatos{
+    -fx-border-color: black; 
+    -fx-border-width: 1 1 1 1;
+}
+
+#buttonBuscar {
+
+    -fx-text-alignment: center;
+    -fx-content-display: center;
+    -fx-min-width: 130;
+
+}

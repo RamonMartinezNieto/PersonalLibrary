@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane prefHeight="300.0" prefWidth="640.0" stylesheets="@../styles/mainStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ComponenteModificarController">
+   <children>
+      <TextField id="texFieldModificar" fx:id="txtId" style="-fx-background-color: e7e7e7;" stylesheets="@../styles/mainStyle.css" GridPane.columnIndex="1" />
+      <TextField id="texFieldModificar" fx:id="txtNombre" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField id="texFieldModificar" fx:id="txtAutor" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField id="texFieldModificar" fx:id="txtGenero" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextField id="texFieldModificar" fx:id="txtComentarios" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <TextField id="texFieldModificar" fx:id="txtPuntuacion" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <Label id="labelDatosLibro" text="Puntuación:" GridPane.rowIndex="6" />
+      <Label id="labelDatosLibro" text="Leído:" GridPane.rowIndex="5" />
+      <Label id="labelDatosLibro" text="Comentarios:" GridPane.rowIndex="4" />
+      <Label id="labelDatosLibro" text="Género:" GridPane.rowIndex="3" />
+      <Label id="labelDatosLibro" text="Autor:" GridPane.rowIndex="2" />
+      <Label id="labelDatosLibro" text="  Nombre:" GridPane.rowIndex="1" />
+      <Label id="labelDatosLibro" text="ID:" />
+      <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="320.0" spacing="25.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+         <children>
+            <RadioButton fx:id="siRadio" contentDisplay="CENTER" mnemonicParsing="false" text="Sí">
+               <toggleGroup>
+                  <ToggleGroup fx:id="opcionLeido" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="noRadio" mnemonicParsing="false" selected="true" text="No" toggleGroup="$opcionLeido" />
+         </children>
+      </HBox>
+      <Label id="labelDatosLibro" text="*" textFill="RED" GridPane.rowIndex="1" />
+   </children>
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints vgrow="SOMETIMES" />
+      <RowConstraints vgrow="SOMETIMES" />
+      <RowConstraints vgrow="SOMETIMES" />
+      <RowConstraints vgrow="SOMETIMES" />
+      <RowConstraints vgrow="SOMETIMES" />
+      <RowConstraints vgrow="SOMETIMES" />
+      <RowConstraints vgrow="SOMETIMES" />
+   </rowConstraints>
+</GridPane>

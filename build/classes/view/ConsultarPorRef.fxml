@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" 
+            minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" 
+            stylesheets="@../styles/mainStyle.css" xmlns="http://javafx.com/javafx/8" 
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ConsultarPorRefController">
+    <children>
+        
+        <VBox alignment="TOP_CENTER" layoutX="118.0" layoutY="14.0" prefHeight="200.0" prefWidth="100.0" spacing="10" 
+              AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                
+                <!-- Incluyo los paneles en la vista principal -->
+                <fx:include fx:id="encabezado" source="Encabezado.fxml" />  
+                <fx:include fx:id="componenteBuscar" source="ComponenteBuscar.fxml" />  
+                
+                <Button id="buttonBuscar" mnemonicParsing="false" onAction="#buscar" text="Buscar" />        
+                
+                <fx:include fx:id="componenteDatos" source="ComponenteDatosLibro.fxml" />  
+                
+            </children>
+        
+        </VBox>
+        
+        
+    </children>
+</AnchorPane>

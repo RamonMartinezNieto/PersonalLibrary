@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane id="gridPaneDatos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="260.0" prefWidth="660.0" styleClass="gridPaneDatos" stylesheets="@../styles/mainStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ComponenteDatosLibroController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="188.0" />
+    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="412.0" minWidth="10.0" prefWidth="412.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label id="labelDatosLibro" text="ID:" GridPane.rowIndex="1" />
+      <Label id="labelDatosLibro" text="Nombre:" GridPane.rowIndex="2" />
+      <Label id="labelDatosLibro" text="Autor:" GridPane.rowIndex="3" />
+      <Label id="labelDatosLibro" text="Género:" GridPane.rowIndex="4" />
+      <Label id="labelDatosLibro" fx:id="lblId" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label id="labelDatosLibro" fx:id="lblNombre" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label id="labelDatosLibro" fx:id="lblAutor" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label id="labelDatosLibro" fx:id="lblGenero" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Label id="labelDatosLibro" text="Comentarios:" GridPane.rowIndex="5" />
+      <Label id="labelDatosLibro" text="Leido:" GridPane.rowIndex="6" />
+      <Label id="labelDatosLibro" text="Puntuación:" GridPane.rowIndex="7" />
+      <Label id="labelDatosLibro" fx:id="lblComentarios" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Label id="labelDatosLibro" fx:id="lblLeido" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <Label id="labelDatosLibro" fx:id="lblPuntuacion" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <Label id="tituloLibroEspecifico" stylesheets="@../styles/mainStyle.css" text="Datos del libro encontrado" GridPane.columnSpan="2" />
+   </children>
+</GridPane>
